@@ -10,8 +10,9 @@ name: quarto-render
 jobs:
     quarto-linux:
         runs-on: ubuntu-latest
-        env:
-        GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+        permissions:
+            pages: write      # to deploy to Pages
+            id-token: write   # to verify the deployment originates from an appropriate source
         steps:
         # Obtain a copy of the repository on the runner
         - name: Check out repository
@@ -52,11 +53,24 @@ jobs:
         #  run: | 
         #     pip install -r requirements.txt
 
-        # Render the Quarto book using GitHub actions and publish
-        # We are using the built-in {{GITHUB_PAT}} environment variable.
-        - name: Publish to GitHub Pages (and render)
-          uses: quarto-dev/quarto-actions/publish@v2
-          with:
-            target: gh-pages
-            #path: _book
+        # Back to our regularly scheduled Quarto output
+        # Render the Quarto file
+        - name: "Render working directory"
+          uses: quarto-dev/quarto-actions/render@v2
+
+        # Upload a tar file that will work with GitHub Pages
+        # Make sure to set a retention day to avoid running into a cap
+        # This artifact shouldn't be required after deployment onto pages was a success.
+        - name: Upload Pages artifact
+          uses: actions/upload-pages-artifact@v3
+          with: 
+            retention-days: 1
+            path: _book # This is the default output directory for Quarto books
+        
+        # Use an Action deploy to push the artifact onto GitHub Pages
+        # This requires the `Action` tab being structured to allow for deployment
+        # instead of using `docs/` or the `gh-pages` branch of the repository
+        - name: Deploy to GitHub Pages
+          id: deployment
+          uses: actions/deploy-pages@v4
 
