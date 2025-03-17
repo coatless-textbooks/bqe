@@ -1,0 +1,8 @@
+Package: bqe
+Title: Building Quarto Extensions
+Version: 0.0.1
+Authors@R: c(person("James Joseph", "Balamuta", "balamut2@illinois.edu", c("aut", "cre", "cph")))
+Depends: R (>= 4.4)
+URL: https://github.com/coatless-textbooks/bqe
+Imports:
+  rmarkdown
