@@ -1,0 +1,34 @@
+# Preface {.unnumbered}
+
+## About This Book
+
+This book is the result of my experience working with Quarto and developing extensions to solve various publishing challenges. I've attempted to distill the knowledge gained through trial and error, community discussions, and documentation exploration into a comprehensive guide that I wish had existed when I started this journey.
+
+## Who This Book Is For
+
+This book is designed for:
+
+- **Quarto users** who want to extend its functionality for specific needs
+- **R, Python, and JavaScript developers** interested in enhancing their document publishing workflows
+- **Technical writers and publishers** looking to customize output formats
+- **Educators** who want to create specialized teaching materials
+- **Open-source contributors** who wish to enhance the Quarto ecosystem
+
+Basic familiarity with Quarto, Markdown, and programming concepts is assumed, though specific technical skills (like Lua programming) will be introduced as needed.
+
+## How to Use This Book
+
+You'll get the most out of this book by:
+
+1. Working through the examples on your own computer
+2. Experimenting with modifications to the provided code
+3. Building your own extensions as you progress through the chapters
+4. Participating in the Quarto community to share your work and learn from others
+
+## Acknowledgments
+
+I would like to thank the Quarto development team at Posit for creating such a powerful and extensible publishing system. Their commitment to open-source software and scientific communication has made this book possible.
+
+Special thanks also go to the many contributors to the Quarto ecosystem whose extensions have served as inspiration and learning resources.
+
+Let's begin our journey into creating Quarto extensions!

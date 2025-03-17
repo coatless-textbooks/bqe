@@ -1,0 +1,12 @@
+# Getting Started with Quarto {.unnumbered}
+
+This section lays the foundation for understanding Quarto extensions. We'll explore what Quarto is, how its extension system works, and how to set up your development environment.
+
+By the end of this part, you'll understand:
+
+-   The architecture of Quarto and its extension system
+-   The different types of extensions you can create
+-   How to set up your development environment
+-   Basic workflows for extension development
+
+These fundamentals will prepare you for creating your first extensions in the next section.

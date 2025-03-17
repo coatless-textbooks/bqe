@@ -1,0 +1,60 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Building Quarto Extensions"
+  author: James Balamuta
+  date: "last-modified"
+  chapters:
+    - index.qmd
+    - preface.qmd
+    - part: p1-intro.qmd
+    #  chapters:
+    #    - p1-chapter1-intro-to-extensions.qmd
+    #    - p1-chapter2-dev-environment.qmd
+    #- part: p2-intro.qmd
+    #  chapters:
+    #    - p2-chapter3-shortcode-extensions.qmd
+    #    - p2-chapter4-filter-extensions.qmd
+    #    - p2-chapter5-format-extensions.qmd
+    #- part: p3-intro.qmd
+    #  chapters:
+    #    - p3-chapter6-advanced-shortcodes.qmd
+    #    - p3-chapter7-revealjs-extensions.qmd
+    #    - p3-chapter8-journal-formats.qmd
+    #    - p3-chapter9-language-extensions.qmd
+    #- part: p4-intro.qmd
+    #  chapters:
+    #    - p4-chapter10-javascript-integration.qmd
+    #    - p4-chapter11-testing-debugging.qmd
+    #    - p4-chapter12-publishing-sharing.qmd
+    #- part: p5-intro.qmd
+    #  chapters:
+    #    - p5-chapter13-case-studies.qmd
+    #    - p5-chapter14-best-practices.qmd
+    #    - p5-chapter15-future-directions.qmd
+    #- part: appendices-intro.qmd
+    #  chapters:
+    #    - appendixA-api-reference.qmd
+    #    - appendixB-lua-for-extensions.qmd
+    #    - appendixC-resources-tools.qmd
+    #    - appendixD-glossary.qmd
+    #- references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    code-fold: true
+    code-tools: true
+  pdf:
+    documentclass: scrreprt
+
+custom-callout:
+  todo:
+    icon-symbol: "📝"
+    color: "orange"
+
+filters:
+- custom-callout

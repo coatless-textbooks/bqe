@@ -1,0 +1,23 @@
+# Welcome {.unnumbered}
+
+Welcome to the **Building Quarto Extensions** book! This book aims to provide you with the knowledge and skills needed to create, publish, and maintain extensions for the Quarto publishing system.
+
+Quarto has revolutionized scientific and technical publishing by providing a unified authoring framework for data science and technical communication. Extensions enhance Quarto's capabilities, allowing for customized formats, interactive elements, specialized shortcodes, and much more.
+
+Whether you're looking to customize Quarto for your organization, contribute to the open-source community, or solve specific publishing challenges, this book will guide you through the entire process of extension development.
+
+## What You'll Learn
+
+In this book, you will:
+
+- Understand Quarto's architecture and extension system
+- Set up a development environment for creating extensions
+- Build various types of extensions, from simple shortcodes to complex formats
+- Learn best practices for testing, debugging, and publishing extensions
+- Explore real-world case studies and applications
+
+## How to Use This Book
+
+This book is designed to be read sequentially, as later chapters build upon concepts introduced earlier. However, experienced Quarto users may choose to jump directly to specific sections of interest.
+
+Code examples are provided throughout, and you are encouraged to experiment with them in your own development environment. Each chapter concludes with exercises to reinforce your learning.

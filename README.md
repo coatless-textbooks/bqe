@@ -1,2 +1,3 @@
-# qeb
-Quarto Extensions Book
+# bqe
+
+Building Quarto Extensions Book
