@@ -1,0 +1,2 @@
+# qeb
+Quarto Extensions Book
