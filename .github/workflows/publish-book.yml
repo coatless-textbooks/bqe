@@ -16,7 +16,7 @@ jobs:
         steps:
         # Obtain a copy of the repository on the runner
         - name: Check out repository
-          uses: actions/checkout@v3
+          uses: actions/checkout@v4
 
         # Install Quarto
         - name: Set up Quarto
@@ -38,16 +38,11 @@ jobs:
         #    extra-packages: any::ggplot2, local::.
         
         # Download latest version of Python
-        - uses: actions/setup-python@v4
+        - uses: actions/setup-python@v5
           with:
             python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
             cache: 'pip'
-        
-        # Install jupyter via pip if it is not part of your requirements.txt
-        # - name: "Install Jupyter Notebooks via Pip"
-        #  run: |
-        #     pip install jupyter 
-        
+                
         # Install python dependencies from requirements via pip
         #- name: "Install Python dependencies via Pip"
         #  run: | 
