@@ -48,8 +48,8 @@ format:
   html:
     code-fold: true
     code-tools: true
-  pdf:
-    documentclass: scrreprt
+  #pdf:
+  #  documentclass: scrreprt
 
 custom-callout:
   todo:
