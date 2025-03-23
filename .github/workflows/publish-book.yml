@@ -44,9 +44,9 @@ jobs:
             cache: 'pip'
                 
         # Install python dependencies from requirements via pip
-        #- name: "Install Python dependencies via Pip"
-        #  run: | 
-        #     pip install -r requirements.txt
+        - name: "Install Python dependencies via Pip"
+          run: | 
+            pip install -r requirements.txt
 
         # Back to our regularly scheduled Quarto output
         # Render the Quarto file
